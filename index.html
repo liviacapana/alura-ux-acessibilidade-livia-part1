@@ -8,28 +8,50 @@
 </head>
 <body>
 
+  <!-- Backdrop / Fundo escuro quando qualquer modal estiver aberto -->
+  <a href="#" class="modal-backdrop" aria-hidden="true"></a>
+
   <header>
     <h1>Guia Fácil</h1>
     <p>Aprenda a usar a internet e seu celular sem complicação</p>
   </header>
 
   <main>
-    <section class="card">
-      <h2>📱 Mexer no Celular</h2>
-      <ul>
-        <li><strong>Aumentar a letra:</strong> Vá em "Configurações", depois em "Tamanho da Fonte" e escolha o tamanho ideal.</li>
-        <li><strong>Toques na tela:</strong> Toque com a ponta do dedo de forma firme, sem segurar por muito tempo se quiser apenas abrir um aplicativo.</li>
-      </ul>
+    <!-- Card 1 com acionamento do Modal -->
+    <section class="card modal-target" id="card-celular">
+      <div class="card-header">
+        <h2>📱 Mexer no Celular</h2>
+        <!-- Botão para abrir o modal / expandir -->
+        <a href="#card-celular" class="btn-abrir" title="Destacar este card">🔍 Destacar</a>
+        <!-- Botão de fechar visível apenas quando o modal está aberto -->
+        <a href="#" class="btn-fechar" title="Fechar visualização">❌ Fechar</a>
+      </div>
+      
+      <div class="card-conteudo">
+        <ul>
+          <li><strong>Aumentar a letra:</strong> Vá em "Configurações", depois em "Tamanho da Fonte" e escolha o tamanho ideal.</li>
+          <li><strong>Toques na tela:</strong> Toque com a ponta do dedo de forma firme, sem segurar por muito tempo se quiser apenas abrir um aplicativo.</li>
+        </ul>
+      </div>
     </section>
 
-    <section class="card">
-      <h2>🌐 Como Usar a Internet</h2>
-      <ul>
-        <li><strong>Pesquisar:</strong> Digite o que procura na barra do navegador exatamente como fala (exemplo: "Como fazer bolo de fubá").</li>
-        <li><strong>Segurança:</strong> Nunca digite senhas ou dados bancários em sites que você não conhece.</li>
-      </ul>
+    <!-- Card 2 com acionamento do Modal -->
+    <section class="card modal-target" id="card-internet">
+      <div class="card-header">
+        <h2>🌐 Como Usar a Internet</h2>
+        <a href="#card-internet" class="btn-abrir" title="Destacar este card">🔍 Destacar</a>
+        <a href="#" class="btn-fechar" title="Fechar visualização">❌ Fechar</a>
+      </div>
+
+      <div class="card-conteudo">
+        <ul>
+          <li><strong>Pesquisar:</strong> Digite o que procura na barra do navegador exatamente como fala (exemplo: "Como fazer bolo de fubá").</li>
+          <li><strong>Segurança:</strong> Nunca digite senhas ou dados bancários em sites que você não conhece.</li>
+        </ul>
+      </div>
     </section>
 
+    <!-- Card 3 -->
     <section class="card">
       <h2>🔍 Temas para Pesquisar</h2>
       <div class="dicas-grid">
